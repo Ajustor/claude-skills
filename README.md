@@ -28,6 +28,15 @@ Per-language practices and the tooling to set up (lint, format, type-check, test
 
 Rule IDs are kept identical to the source document so findings can be traced back to it. When the rules document changes, update the matching skill.
 
+### Field notes
+
+Empirical pitfalls met in real projects, written as symptom → cause → fix. They are **not** rules from the *Development Rules* document and carry no rule IDs; they complement the language skills with exact error messages to search for.
+
+| Skill | Scope |
+|---|---|
+| [dotnet-sqlserver-pitfalls](skills/dotnet-sqlserver-pitfalls/SKILL.md) | EF Core, SQL Server / Azure SQL, sqlcmd/bcp, ASP.NET Core model binding, authorization, Swashbuckle, test doubles |
+| [devops-tooling-pitfalls](skills/devops-tooling-pitfalls/SKILL.md) | Azure DevOps PRs and test reports, git, Azure Container Apps, Keycloak, shell scripting |
+
 ## Install with pollen
 
 In a project's `pollen.yaml` (or the user-level one, `pollen -g`):
